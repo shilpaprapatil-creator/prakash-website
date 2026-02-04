@@ -43,10 +43,12 @@ body {
 }
 
 .hero h2 {
-  margin-top: 16px;
-  font-size: 1.7rem;
-  font-weight: 700;
+  margin-top: 18px;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #e0f2fe;
 }
+
 
 .role {
   margin-top: 6px;
@@ -318,3 +320,4 @@ footer a:hover {
     padding: 26px 14px;
   }
 }
+
