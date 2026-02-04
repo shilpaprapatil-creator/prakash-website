@@ -11,7 +11,7 @@ body {
   line-height: 1.6;
 }
 
-/* ---------- HERO ---------- */
+/* HERO */
 .hero {
   display: flex;
   flex-wrap: wrap;
@@ -32,7 +32,7 @@ body {
 
 .hero h2 {
   margin-top: 20px;
-  font-size: 2.1rem;
+  font-size: 2.2rem;
   font-weight: 800;
   color: #e0f2fe;
 }
@@ -65,21 +65,16 @@ body {
   color: #020617;
 }
 
-.secondary {
-  border: 1px solid #38bdf8;
-  color: #38bdf8;
-}
-
 .hero-image img {
   width: 280px;
   border-radius: 14px;
   box-shadow: 0 20px 40px rgba(0,0,0,0.6);
 }
 
-/* ---------- SECTIONS ---------- */
+/* SECTIONS */
 .section-box {
   max-width: 1200px;
-  margin: 50px auto;
+  margin: 45px auto;
   padding: 45px 6%;
   border-radius: 16px;
 }
@@ -113,7 +108,7 @@ body {
   margin-bottom: 16px;
 }
 
-/* ---------- QUOTE ---------- */
+/* QUOTE */
 .highlight {
   text-align: center;
 }
@@ -124,7 +119,7 @@ body {
   line-height: 1.4;
 }
 
-/* ---------- LISTS ---------- */
+/* LISTS */
 .list li {
   padding: 10px 0;
   border-bottom: 1px solid rgba(255,255,255,0.15);
@@ -134,7 +129,7 @@ body {
   border-bottom: 1px solid rgba(2,6,23,0.15);
 }
 
-/* ---------- GRID ---------- */
+/* GRID */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -150,7 +145,7 @@ body {
   border-left: 5px solid #0ea5e9;
 }
 
-/* ---------- FOOTER ---------- */
+/* FOOTER */
 footer {
   text-align: center;
   padding: 50px 20px;
@@ -168,7 +163,7 @@ footer a {
   opacity: 0.9;
 }
 
-/* ---------- MOBILE FIX ---------- */
+/* MOBILE FIX */
 @media (max-width: 768px) {
   .hero {
     padding: 50px 6%;
