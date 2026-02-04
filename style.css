@@ -11,7 +11,7 @@ html {
 body {
   font-family: 'Inter', sans-serif;
   background: #0b0f19;
-  color: #e5e7eb;
+  color: #020617;
   line-height: 1.7;
 }
 
@@ -23,6 +23,7 @@ body {
   padding: 90px 8%;
   min-height: 100vh;
   background: radial-gradient(circle at top right, #0ea5e9, #020617 60%);
+  color: #e5e7eb;
 }
 
 .hero-text {
@@ -32,7 +33,6 @@ body {
 .hero h1 {
   font-size: 3rem;
   font-weight: 800;
-  color: #f8fafc;
 }
 
 .hero h1 span {
@@ -85,74 +85,94 @@ body {
   box-shadow: 0 20px 50px rgba(0,0,0,0.6);
 }
 
-/* ---------- SECTION BOX ---------- */
+/* ---------- SECTION BOXES ---------- */
 .section-box {
-  margin: 50px auto;
-  padding: 45px 6%;
+  margin: 55px auto;
+  padding: 50px 6%;
   max-width: 1200px;
-  border-radius: 14px;
-  background: linear-gradient(135deg, #020617, #0b122a);
-  border: 1px solid rgba(56,189,248,0.25);
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(2,6,23,0.25);
 }
 
+/* Light sections */
+.section-box.light {
+  background: linear-gradient(135deg, #e0f2fe, #bae6fd);
+}
+
+/* Dark sections */
+.section-box.dark {
+  background: linear-gradient(135deg, #020617, #0b122a);
+  color: #e5e7eb;
+}
+
+/* Highlight quote */
+.section-box.highlight {
+  background: linear-gradient(135deg, #cffafe, #a5f3fc);
+  text-align: center;
+}
+
+/* Headings */
 .section-box h3 {
-  font-size: 1.9rem;
+  font-size: 2rem;
   margin-bottom: 14px;
+  color: #0284c7;
+}
+
+.section-box.dark h3 {
   color: #38bdf8;
 }
 
 .section-box h4 {
   font-size: 1.4rem;
-  margin-bottom: 14px;
-  color: #e0f2fe;
+  margin-bottom: 12px;
 }
 
-.section-box p {
-  margin-bottom: 14px;
-}
-
-/* ---------- QUOTE ---------- */
-.highlight {
-  text-align: center;
-}
-
+/* Quote */
 .quote {
-  font-size: 1.35rem;
+  font-size: 1.5rem;
+  font-weight: 600;
   font-style: italic;
-  color: #e0f2fe;
 }
 
-.pillars {
-  margin-top: 24px;
-}
-
+/* Pillars */
 .pillars span {
   display: inline-block;
   margin: 6px;
   padding: 8px 16px;
   border-radius: 20px;
   background: #020617;
-  border: 1px solid #38bdf8;
   color: #7dd3fc;
+  border: 1px solid #38bdf8;
 }
 
-/* ---------- DARK VARIANT ---------- */
-.dark {
-  background: linear-gradient(135deg, #020617, #020617);
+/* NVIDIA block */
+.nvidia-block {
+  margin: 24px 0;
+  text-align: left;
 }
 
-/* ---------- LIST ---------- */
+.nvidia-block img {
+  height: 60px;
+}
+
+.nvidia-caption {
+  margin-top: 6px;
+  font-size: 0.9rem;
+  color: #93c5fd;
+}
+
+/* Lists */
 .list {
   list-style: none;
   max-width: 800px;
 }
 
 .list li {
-  padding: 9px 0;
-  border-bottom: 1px solid rgba(56,189,248,0.25);
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 
-/* ---------- GRID ---------- */
+/* Grid */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -161,41 +181,30 @@ body {
 
 .card {
   padding: 26px;
-  border-radius: 10px;
-  background: linear-gradient(135deg, #020617, #0b122a);
-  border: 1px solid rgba(56,189,248,0.3);
-  text-align: center;
+  border-radius: 12px;
+  background: #ffffff;
+  border-left: 5px solid #0ea5e9;
   font-weight: 600;
 }
 
-/* ---------- NVIDIA ---------- */
-.section-header.inline {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.logo {
-  height: 34px;
-  opacity: 0.9;
+/* Dark card override */
+.section-box.dark .card {
+  background: linear-gradient(135deg, #020617, #0b122a);
+  color: #e5e7eb;
 }
 
 /* ---------- FOOTER ---------- */
 footer {
   margin-top: 60px;
-  padding: 50px 8%;
+  padding: 60px 8%;
   text-align: center;
   background: #020617;
-  border-top: 1px solid rgba(56,189,248,0.25);
+  color: #e5e7eb;
 }
 
 footer h4 {
   font-size: 1.5rem;
   color: #38bdf8;
-}
-
-footer p {
-  margin-top: 12px;
 }
 
 footer a {
@@ -208,8 +217,10 @@ footer a:hover {
   text-decoration: underline;
 }
 
-.footer-note {
-  margin-top: 12px;
-  font-size: 0.9rem;
-  color: #94a3b8;
+/* BIG VISION LINE */
+.footer-vision {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #e0f2fe;
 }
