@@ -1,3 +1,4 @@
+/* ================= RESET ================= */
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +14,7 @@ body {
   background: #0b0f19;
   color: #020617;
   line-height: 1.6;
-  overflow-x: hidden; /* CRITICAL */
+  overflow-x: hidden; /* prevents edge overflow */
 }
 
 /* ================= HERO ================= */
@@ -21,11 +22,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 32px;
   padding: 80px 8%;
   min-height: 100vh;
   background: radial-gradient(circle at top right, #0ea5e9, #020617 65%);
   color: #e5e7eb;
-  gap: 32px;
 }
 
 .hero-text {
@@ -66,8 +67,8 @@ body {
   padding: 12px 20px;
   border-radius: 6px;
   font-weight: 600;
-  margin-right: 12px;
   text-decoration: none;
+  margin-right: 12px;
   display: inline-block;
 }
 
@@ -91,25 +92,24 @@ body {
 
 /* ================= SECTION BOXES ================= */
 .section-box {
-  margin: 40px auto;
-  padding: 42px 6%;
   max-width: 1200px;
+  margin: 40px auto;
+  padding: 40px 6%;
   border-radius: 16px;
-  box-shadow: 0 16px 30px rgba(2,6,23,0.22);
 }
 
-/* Light */
+/* Light section */
 .section-box.light {
   background: linear-gradient(135deg, #e0f2fe, #bae6fd);
 }
 
-/* Dark */
+/* Dark section */
 .section-box.dark {
   background: linear-gradient(135deg, #020617, #0b122a);
   color: #e5e7eb;
 }
 
-/* Highlight */
+/* Highlight / Quote section */
 .section-box.highlight {
   background: linear-gradient(135deg, #cffafe, #a5f3fc);
   text-align: center;
@@ -128,12 +128,13 @@ body {
 
 .section-box h4 {
   font-size: 1.35rem;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 
 /* Text */
 .section-box p {
   margin-bottom: 12px;
+  font-size: 1.05rem;
 }
 
 /* Quote */
@@ -141,40 +142,24 @@ body {
   font-size: 1.45rem;
   font-weight: 600;
   font-style: italic;
+  color: #020617;
 }
 
-/* Pillars */
-.pillars {
-  margin-top: 18px;
-}
-
-.pillars span {
-  display: inline-block;
-  margin: 6px;
-  padding: 8px 14px;
-  border-radius: 20px;
-  background: #020617;
+/* Leadership / NVIDIA Subtext */
+.subhead {
+  margin-top: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
   color: #7dd3fc;
-  border: 1px solid #38bdf8;
 }
 
-/* NVIDIA */
-.nvidia-block {
-  margin: 20px 0;
-}
-
-.nvidia-block img {
-  height: 56px;
-  max-width: 100%;
-}
-
-.nvidia-caption {
-  margin-top: 4px;
-  font-size: 0.85rem;
+.supporting {
+  margin-bottom: 16px;
+  font-size: 0.95rem;
   color: #93c5fd;
 }
 
-/* Lists */
+/* ================= LIST ================= */
 .list {
   list-style: none;
   max-width: 100%;
@@ -185,7 +170,7 @@ body {
   border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 
-/* Grid */
+/* ================= GRID ================= */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -220,21 +205,31 @@ footer h4 {
   color: #38bdf8;
 }
 
+footer p {
+  margin-top: 12px;
+}
+
 footer a {
   color: #38bdf8;
   text-decoration: none;
   font-weight: 600;
 }
 
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Footer closing line (italic, not bold) */
 .footer-vision {
   margin-top: 18px;
-  font-size: 1.45rem;
-  font-weight: 800;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 400;
   color: #e0f2fe;
 }
 
 /* =================================================
-   📱 MOBILE FIX (STRICT & CLEAN)
+   📱 MOBILE RESPONSIVE (STABLE & CLEAN)
    ================================================= */
 @media (max-width: 768px) {
 
@@ -281,7 +276,6 @@ footer a {
   .section-box {
     margin: 28px 14px;
     padding: 30px 16px;
-    box-shadow: none; /* IMPORTANT */
   }
 
   .section-box h3 {
@@ -289,16 +283,11 @@ footer a {
   }
 
   .section-box h4 {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
   }
 
   .quote {
     font-size: 1.2rem;
-  }
-
-  .pillars span {
-    font-size: 0.85rem;
-    padding: 6px 12px;
   }
 
   .grid {
@@ -310,7 +299,7 @@ footer a {
   }
 
   .footer-vision {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -321,7 +310,7 @@ footer a {
   }
 
   .hero h2 {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
   }
 
   .section-box {
