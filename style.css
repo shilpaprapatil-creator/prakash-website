@@ -16,22 +16,24 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 80px 6%;
   gap: 40px;
+  text-align: center;
 }
 
 .hero-content {
-  max-width: 620px;
+  max-width: 680px;
 }
 
-.hero h1 {
-  font-size: 2.5rem;
+.hero-title {
+  font-size: 2.6rem;
   font-weight: 800;
+  text-align: center;
 }
 
 .hero h2 {
-  margin-top: 20px;
+  margin-top: 22px;
   font-size: 2.2rem;
   font-weight: 800;
   color: #e0f2fe;
@@ -53,6 +55,7 @@ body {
   margin-top: 26px;
   display: flex;
   gap: 14px;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -63,8 +66,15 @@ body {
   font-weight: 600;
   background: #0ea5e9;
   color: #020617;
-  text-align: center;
   min-width: 180px;
+  text-align: center;
+}
+
+/* HERO IMAGE */
+.hero-image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .hero-image img {
@@ -159,6 +169,18 @@ footer a {
   text-decoration: none;
 }
 
+/* LinkedIn icon */
+.linkedin-icon {
+  display: inline-block;
+  background: #0a66c2;
+  color: white;
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding: 3px 6px;
+  border-radius: 3px;
+  margin-right: 4px;
+}
+
 .footer-vision {
   margin-top: 16px;
   font-size: 1.1rem;
@@ -166,13 +188,9 @@ footer a {
   opacity: 0.9;
 }
 
-/* MOBILE FIX */
+/* MOBILE */
 @media (max-width: 768px) {
-  .hero {
-    padding: 50px 6%;
-  }
-
-  .hero h1 {
+  .hero-title {
     font-size: 1.9rem;
   }
 
